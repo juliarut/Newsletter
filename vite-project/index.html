@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naturskyddsföreningen</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-white">
+
+    <!-- Header -->
+    <header class="relative w-full h-[70vh] flex items-center justify-center text-center bg-green-600">
+        <div class="relative z-10 px-6 py-4 text-white">
+            <h1 class="text-4xl font-bold mb-4">Välkommen till Naturskyddsföreningen</h1>
+            <p class="text-lg mb-8">Vi arbetar för en bättre och mer hållbar framtid för vår planet.</p>
+            <a href="#support" class="bg-yellow-300 hover:bg-yellow-400 text-white py-2 px-6 rounded-full">Stöd oss</a>
+        </div>
+    </header>
+
+    <!-- Navigation - Hamburgermeny -->
+    <nav class="bg-white shadow-md fixed w-full z-10 top-0 left-0">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="relative flex justify-between items-center py-4">
+                <img src="images/Falken.png" alt="Logo" class="h-12">
+                <div class="lg:hidden">
+                    <button id="hamburger" class="text-gray-700">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="hidden lg:flex space-x-6">
+                    <a href="#pfas" class="text-gray-800">PFAS</a>
+                    <a href="#shop" class="text-gray-800">Julbutik</a>
+                    <a href="#blog" class="text-gray-800">Blogg</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- PFAS Information Section -->
+    <section id="pfas" class="bg-white py-24 sm:py-32">
+        <div class="container mx-auto px-6">
+            <div class="max-w-3xl mx-auto">
+                <div class="bg-gray-100 p-8 rounded-xl shadow-md">
+                    <h2 class="text-2xl font-semibold text-gray-900">Stoppa PFAS!</h2>
+                    <p class="mt-4 text-lg text-gray-600">PFAS är farliga kemikalier som finns i vår natur och våra kroppar. Det är hög tid att vi agerar för att minska spridningen av dessa ämnen och skydda både människor och djur.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Julbutik Section -->
+    <section id="shop" class="bg-cover bg-center h-96" style="background-image: url('images/bjorn-m-ungar-istock.jpg');">
+        <div class="relative container mx-auto px-6 flex flex-col justify-center items-center h-full text-center text-white">
+            <h2 class="text-3xl font-bold mb-4">Satsa på en julklapp för naturen</h2>
+            <p class="text-lg mb-8">Sprid julens glädje och värme med en julklapp som gör skillnad. I vår julbutik hittar du julgåvobevis, presentmedlemskap och böcker – presenter som stödjer vårt arbete för att skydda miljön.</p>
+            <a href="#shop" class="bg-green-600 hover:bg-green-700 text-white py-2 px-6 rounded-full">Till julbutiken</a>
+        </div>
+    </section>
+
+    <!-- Bloggpost Section -->
+    <section id="blog" class="bg-white py-24 sm:py-32">
+        <div class="container mx-auto px-6">
+            <div class="max-w-2xl mx-auto">
+                <h2 class="text-4xl font-semibold text-gray-900">Från bloggen</h2>
+                <p class="mt-2 text-lg text-gray-600">Läs våra tips om hur vi tillsammans kan rädda vår planet.</p>
+            </div>
+            <div class="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                <!-- Bloggpost 1 -->
+                <article class="flex flex-col bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold text-gray-900">Så här räddar vi våra hav</h3>
+                    <p class="mt-4 text-gray-600">För att bevara våra hav för kommande generationer måste vi vidta åtgärder nu. Minska plastföroreningar och skydda marina ekosystem.</p>
+                    <a href="#" class="mt-6 text-green-600 hover:text-green-800">Läs mer</a>
+                </article>
+
+                <!-- Bloggpost 2 -->
+                <article class="flex flex-col bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold text-gray-900">Så kan vi stoppa skogsskövling</h3>
+                    <p class="mt-4 text-gray-600">Genom att skydda våra skogar och öka medvetenheten kan vi stoppa skogsskövlingen och bevara naturens mångfald.</p>
+                    <a href="#" class="mt-6 text-green-600 hover:text-green-800">Läs mer</a>
+                </article>
+
+                <!-- Bloggpost 3 -->
+                <article class="flex flex-col bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold text-gray-900">Fossilfri framtid – så gör vi</h3>
+                    <p class="mt-4 text-gray-600">För att säkra en hållbar framtid måste vi minska vårt beroende av fossila bränslen och satsa på förnybar energi.</p>
+                    <a href="#" class="mt-6 text-green-600 hover:text-green-800">Läs mer</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-green-600 text-white py-6">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2024 Naturskyddsföreningen. Alla rättigheter reserverade.</p>
+        </div>
+    </footer>
+
+    <!-- Script for Hamburger Menu -->
+    <script>
+        const hamburger = document.getElementById("hamburger");
+        const navMenu = document.querySelector("nav div:last-child");
+
+        hamburger.addEventListener("click", () => {
+            navMenu.classList.toggle("hidden");
+        });
+    </script>
+</body>
+
+</html>
