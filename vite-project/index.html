@@ -8,7 +8,6 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
-
         body {
             font-family: 'Roboto', sans-serif;
         }
@@ -17,152 +16,134 @@
 
 <body class="bg-white">
 
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-10 top-0 left-0">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center py-4">
+            <!-- Logo -->
+            <a href="#" class="flex items-center">
+                <img src="images/Falken.png" alt="Logo" class="h-12">
+            </a>
+            <!-- Hamburger Menu -->
+            <button id="hamburger" class="lg:hidden text-gray-700">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+            <!-- Menu Links -->
+            <div id="menu" class="hidden lg:flex space-x-6">
+                <a href="#pfas" class="text-gray-800 hover:underline">PFAS</a>
+                <a href="#shop" class="text-gray-800 hover:underline">Julbutik</a>
+                <a href="#blog" class="text-gray-800 hover:underline">Blogg</a>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white shadow-md">
+            <a href="#pfas" class="block py-2 px-6 text-gray-800 hover:bg-gray-100">PFAS</a>
+            <a href="#shop" class="block py-2 px-6 text-gray-800 hover:bg-gray-100">Julbutik</a>
+            <a href="#blog" class="block py-2 px-6 text-gray-800 hover:bg-gray-100">Blogg</a>
+        </div>
+    </nav>
+
     <!-- Header -->
     <header class="relative w-full h-[70vh] flex items-center justify-center text-center bg-[#7C8A4D]">
-        <div class="relative z- px-6 py-4 text-white">
-            <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
-                Välkommen till Naturskyddsföreningen
-            </h1> 
-            <p class="text-base sm:text-lg md:text-xl lg:text-2xl mb-8">
-                Vi arbetar för en bättre och mer hållbar framtid för vår planet!
-            </p> 
-            <a href="#support" class="bg-[#F9E79F] hover:bg-[#F7DC6F] text-gray-800 py-4 px-12 rounded-full text-lg sm:text-xl md:text-2xl">
-                Stöd oss
-            </a>
+        <div class="z-10 px-6 py-4 text-white">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Välkommen till Naturskyddsföreningen</h1>
+            <p class="text-lg md:text-2xl mb-8">Vi arbetar för en bättre och mer hållbar framtid för vår planet!</p>
+            <a href="#support" class="bg-[#F9E79F] hover:bg-[#F7DC6F] text-gray-800 py-3 px-8 rounded-full text-lg">Stöd oss</a>
         </div>
     </header>
 
-    <!-- Bento Section -->
-    <section class="bg-gray-50 py-24 sm:py-32">
-        <div class="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
-            <h2 class="text-center text-base/7 font-semibold text-">Hjälp oss att stoppa</h2>
-            <p class="mx-auto mt-2 max-w-lg text-balance text-center text-4xl font-semibold tracking-tight text-gray-950 sm:text-5xl">PFAS finns i vatten över hela landet</p>
-            <div class="mt-10 grid gap-4 sm:mt-16 lg:grid-cols-3 lg:grid-rows-2">
-                <div class="relative lg:row-span-2">
-                    <div class="absolute inset-px rounded-lg bg-white lg:rounded-l-[2rem]"></div>
-                    <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] lg:rounded-l-[calc(2rem+1px)]">
-                        <div class="px-8 pb-3 pt-8 sm:px-10 sm:pb-0 sm:pt-10">
-                            <p class="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">Plantera ett frö med mobilen</p>
-                            <p class="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">Lär dig om hur du stödjer en mer hållbar tillväxt</p>
-                        </div>
-                        <div class="relative min-h-[30rem] w-full grow [container-type:inline-size] max-lg:mx-auto max-lg:max-w-sm">
-                            <div class="absolute inset-x-10 bottom-0 top-10 overflow-hidden rounded-t-[12cqw] border-x-[3cqw] border-t-[3cqw] border-gray-700 bg-gray-900 shadow-2xl">
-                                <img class="size-full object-cover object-top" src="images/introbild.jpg" alt="PFAS">
-                            </div>
-                        </div>
+    <!-- PFAS Section -->
+    <section class="bg-gray-50 py-16">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-center text-base font-semibold text-gray-700">Hjälp oss att stoppa</h2>
+            <p class="mt-2 text-center text-4xl font-bold text-gray-900">PFAS finns i vatten över hela landet</p>
+            <div class="mt-10 grid gap-8 lg:grid-cols-3">
+                <!-- Card 1 -->
+                <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                    <img src="images/introbild.jpg" alt="PFAS" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold text-gray-900">Plantera ett frö med mobilen</h3>
+                        <p class="mt-2 text-gray-600">Lär dig om hur du stödjer en mer hållbar tillväxt.</p>
                     </div>
-                    <div class="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 lg:rounded-l-[2rem]"></div>
                 </div>
-                <div class="relative max-lg:row-start-1">
-                    <div class="absolute inset-px rounded-lg bg-white max-lg:rounded-t-[2rem]"></div>
-                    <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)]">
-                        <div class="px-8 pt-8 sm:px-10 sm:pt-10">
-                            <p class="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">En växande fara</p>
-                            <p class="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">Trots att PFAS kan orsaka allvarliga sjukdomar finns det i vatten över hela landet. Det är hög tid att agera – NU.</p>
-                        </div>
-                        <div class="flex flex-1 items-center justify-center px-8 max-lg:pb-12 max-lg:pt-10 sm:px-10 lg:pb-2">
-                            <img class="w-full max-lg:max-w-xs" src="Images/vatten.jpeg" alt="vatten">
-                        </div>
+                <!-- Card 2 -->
+                <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                    <img src="images/vatten.jpeg" alt="Vatten" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold text-gray-900">En växande fara</h3>
+                        <p class="mt-2 text-gray-600">
+                            Trots att PFAS kan orsaka allvarliga sjukdomar finns det i vatten över hela landet. Det är hög tid att agera – NU.
+                        </p>
                     </div>
-                    <div class="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 max-lg:rounded-t-[2rem]"></div>
                 </div>
-                <div class="relative max-lg:row-start-3 lg:col-start-2 lg:row-start-2">
-                    <div class="absolute inset-px rounded-lg bg-white"></div>
-                    <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)]">
-                        <div class="px-8 pt-8 sm:px-10 sm:pt-10">
-                            <p class="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">Vi bryr oss om en grön framtid</p>
-                            <p class="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">Naturskyddsföreningen utgör en säker källa till fakta om miljö och natur för medier, makthavare och allmänhet. Vi ger tips på hållbar konsumtion,
-                                och hur vi som medborgare kan agera tillsammans för en hållbar
-                                framtid. Här kan du läsa om våra rapporter, vår miljömärkning Bra miljöval och om vår prisbelönade medlemstidning Sveriges Natur.</p>
-                        </div>
-                        <div class="absolute bottom-20 w-full text-center">
-                            <img src="images/Falken.png" alt="Logo" class="mx-auto h-16">
-                        </div>
-                        <div class="flex flex-1 items-center [container-type:inline-size] max-lg:py-6 lg:pb-2">
-                            <img class="h-[min(152px,40cqw)] object-cover" src="" alt="">
-                        </div>
-                    <div class="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5"></div>
+                <!-- Card 3 -->
+                <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                    <img src="images/Falken.png" alt="Grön Framtid" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold text-gray-900">Vi bryr oss om en grön framtid</h3>
+                        <p class="mt-2 text-gray-600">
+                            Vi ger tips på hållbar konsumtion och hur vi kan agera tillsammans för en hållbar framtid.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Navigation - Hamburgermeny -->
-    <nav class="bg-white shadow-md fixed w-full z-10 top-0 left-0">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="relative flex justify-between items-center py-4">
-                <img src="images/Falken.png" alt="Logo" class="h-12">
-                <div class="lg:hidden">
-                    <button id="hamburger" class="text-gray-700">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                        </svg>
-                    </button>
-                </div>
-                <div class="hidden lg:flex space-x-6">
-                    <a href="#pfas" class="text-gray-800">PFAS</a>
-                    <a href="#shop" class="text-gray-800">Julbutik</a>
-                    <a href="#blog" class="text-gray-800">Blogg</a>
-                </div>
-            </div>
-        </div>
-    </nav>
-
     <!-- Julbutik Section -->
     <section id="shop" class="bg-cover bg-center h-96" style="background-image: url('images/bjorn-m-ungar-istock.jpg');">
-        <div class="relative container mx-auto px-6 flex flex-col justify-center items-center h-full text-center text-white">
-            <h2 class="text-3xl font-bold mb-4">Satsa på en julklapp för naturen</h2>
+        <div class="flex flex-col justify-center items-center h-full text-center text-white bg-black bg-opacity-50">
+            <h2 class="text-4xl font-bold mb-4">Satsa på en julklapp för naturen</h2>
             <p class="text-lg mb-8">Sprid julens glädje och värme med en julklapp som gör skillnad. I vår julbutik hittar du julgåvobevis, presentmedlemskap och böcker – presenter som stödjer vårt arbete för att skydda miljön.</p>
             <a href="#shop" class="bg-green-600 hover:bg-green-700 text-white py-2 px-6 rounded-full">Till julbutiken</a>
         </div>
     </section>
 
-    <!-- Bloggpost Section -->
-    <section id="blog" class="bg-white py-24 sm:py-32">
-        <div class="container mx-auto px-6">
-            <div class="max-w-2xl mx-auto">
-                <h2 class="text-4xl font-semibold text-gray-900">Från bloggen</h2>
-                <p class="mt-2 text-lg text-gray-600">Läs våra tips om hur vi tillsammans kan rädda vår planet.</p>
-            </div>
-            <div class="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-                <!-- Bloggpost 1 -->
-                <article class="flex flex-col bg-white p-6 rounded-lg shadow-lg">
+    <!-- Blog Section -->
+    <section id="blog" class="bg-white py-16">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-4xl font-semibold text-gray-900">Från bloggen</h2>
+            <p class="mt-2 text-lg text-gray-600">Läs våra tips om hur vi tillsammans kan rädda vår planet.</p>
+            <div class="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                <!-- Blog Post 1 -->
+                <div class="bg-white shadow-md rounded-lg p-6">
                     <h3 class="text-xl font-semibold text-gray-900">Så här räddar vi våra hav</h3>
                     <p class="mt-4 text-gray-600">För att bevara våra hav för kommande generationer måste vi vidta åtgärder nu. Minska plastföroreningar och skydda marina ekosystem.</p>
                     <a href="#" class="mt-6 text-green-600 hover:text-green-800">Läs mer</a>
-                </article>
-
-                <!-- Bloggpost 2 -->
-                <article class="flex flex-col bg-white p-6 rounded-lg shadow-lg">
+                </div>
+                <!-- Blog Post 2 -->
+                <div class="bg-white shadow-md rounded-lg p-6">
                     <h3 class="text-xl font-semibold text-gray-900">Så kan vi stoppa skogsskövling</h3>
                     <p class="mt-4 text-gray-600">Genom att skydda våra skogar och öka medvetenheten kan vi stoppa skogsskövlingen och bevara naturens mångfald.</p>
                     <a href="#" class="mt-6 text-green-600 hover:text-green-800">Läs mer</a>
-                </article>
-
-                <!-- Bloggpost 3 -->
-                <article class="flex flex-col bg-white p-6 rounded-lg shadow-lg">
+                </div>
+                <!-- Blog Post 3 -->
+                <div class="bg-white shadow-md rounded-lg p-6">
                     <h3 class="text-xl font-semibold text-gray-900">Fossilfri framtid – så gör vi</h3>
                     <p class="mt-4 text-gray-600">För att säkra en hållbar framtid måste vi minska vårt beroende av fossila bränslen och satsa på förnybar energi.</p>
                     <a href="#" class="mt-6 text-green-600 hover:text-green-800">Läs mer</a>
-                </article>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-[#7C8A4D] text-white py-6">
-        <div class="container mx-auto px-6 text-center">
-            <p>&copy; 2024 Naturskyddsföreningen. Alla rättigheter reserverade.</p>
+    <footer class="bg-[#7C8A4D] text-white py-8">
+        <div class="text-center">
+            &copy; 2024 Naturskyddsföreningen. Alla rättigheter reserverade.
         </div>
     </footer>
 
-    <!-- Script for Hamburger Menu -->
+    <!-- Script -->
     <script>
         const hamburger = document.getElementById("hamburger");
-        const navMenu = document.querySelector("nav div:last-child");
+        const menu = document.getElementById("menu");
+        const mobileMenu = document.getElementById("mobile-menu");
 
         hamburger.addEventListener("click", () => {
-            navMenu.classList.toggle("hidden");
+            menu.classList.toggle("hidden");
+            mobileMenu.classList.toggle("hidden");
         });
     </script>
 
