@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naturskyddsföreningen</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-white">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-10 top-0 left-0">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center py-4">
+            <!-- Logo -->
+            <a href="#" class="flex items-center">
+                <img src="images/Falken.png" alt="Logo" class="h-12">
+            </a>
+            <!-- Hamburger Menu -->
+            <button id="hamburger" class="lg:hidden text-gray-700">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+            <!-- Menu Links -->
+            <div id="menu" class="hidden lg:flex space-x-6">
+                <a href="#pfas" class="text-gray-800 hover:underline">PFAS</a>
+                <a href="#shop" class="text-gray-800 hover:underline">Julbutik</a>
+                <a href="#blog" class="text-gray-800 hover:underline">Blogg</a>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white shadow-md">
+            <a href="#pfas" class="block py-2 px-6 text-gray-800 hover:bg-gray-100">PFAS</a>
+            <a href="#shop" class="block py-2 px-6 text-gray-800 hover:bg-gray-100">Julbutik</a>
+            <a href="#blog" class="block py-2 px-6 text-gray-800 hover:bg-gray-100">Blogg</a>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="relative w-full h-[70vh] flex items-center justify-center text-center bg-[#7C8A4D]">
+        <div class="z-10 px-6 py-4 text-white">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Välkommen till Naturskyddsföreningen</h1>
+            <p class="text-lg md:text-2xl mb-8">Vi arbetar för en bättre och mer hållbar framtid för vår planet!</p>
+        </div>
+    </header>
+
+    <!-- PFAS Section -->
+    <section class="bg-gray-50 py-16">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-center text-base font-semibold text-gray-700">Hjälp oss att stoppa</h2>
+            <p class="mt-2 text-center text-4xl font-bold text-gray-900">PFAS finns i vatten över hela landet</p>
+            <div class="mt-10 grid gap-8 lg:grid-cols-3">
+                <!-- Card 1 -->
+                <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                    <img src="images/introbild.jpg" alt="PFAS" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold text-gray-900">Plantera ett frö med mobilen</h3>
+                        <p class="mt-2 text-gray-600">Lär dig om hur du stödjer en mer hållbar tillväxt.</p>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                    <img src="images/vatten.jpeg" alt="Vatten" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold text-gray-900">En växande fara</h3>
+                        <p class="mt-2 text-gray-600">
+                            Trots att PFAS kan orsaka allvarliga sjukdomar finns det i vatten över hela landet. Det är hög tid att agera – NU.
+                        </p>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                    <img src="images/Falken.png" alt="Grön Framtid" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold text-gray-900">Vi bryr oss om en grön framtid</h3>
+                        <p class="mt-2 text-gray-600">
+                            Vi ger tips på hållbar konsumtion och hur vi kan agera tillsammans för en hållbar framtid.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Nyhetssektion -->
+<section id="news" class="bg-gray-50 py-16">
+    <div class="max-w-7xl mx-auto px-6">
+        <h2 class="text-4xl font-semibold text-gray-900">Senaste Nyheterna</h2>
+        <p class="mt-2 text-lg text-gray-600">Håll dig uppdaterad med våra senaste nyheter om miljö och naturskydd.</p>
+        <div class="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            <!-- Nyhet 1 -->
+            <div class="bg-white shadow-md rounded-lg p-6">
+                <h3 class="text-xl font-semibold text-gray-900">Nyhet om PFAS och Vattenföroreningar</h3>
+                <p class="mt-4 text-gray-600">Vi rapporterar om nya forskningsresultat och politiska beslut för att minska PFAS i vårt dricksvatten.</p>
+                <a href="#" class="mt-6 text-green-600 hover:text-green-800">Läs mer</a>
+            </div>
+            <!-- Nyhet 2 -->
+            <div class="bg-white shadow-md rounded-lg p-6">
+                <h3 class="text-xl font-semibold text-gray-900">Skogsskydd – Framtida Utmaningar</h3>
+                <p class="mt-4 text-gray-600">Vi utforskar nya initiativ för att bevara Sveriges skogar för kommande generationer.</p>
+                <a href="#" class="mt-6 text-green-600 hover:text-green-800">Läs mer</a>
+            </div>
+            <!-- Nyhet 3 -->
+            <div class="bg-white shadow-md rounded-lg p-6">
+                <h3 class="text-xl font-semibold text-gray-900">Fossilfri Framtid – Så gör vi!</h3>
+                <p class="mt-4 text-gray-600">Ta del av våra planer för en helt fossilfri framtid och hur vi kan nå dit tillsammans.</p>
+                <a href="#" class="mt-6 text-green-600 hover:text-green-800">Läs mer</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Engagemangssektion -->
+<section id="engage" class="bg-[#7C8A4D] text-white py-16">
+    <div class="max-w-7xl mx-auto px-6">
+        <h2 class="text-4xl font-semibold">Så kan du engagera dig!</h2>
+        <p class="mt-2 text-lg">Tillsammans kan vi göra skillnad! Här är några sätt att bidra:</p>
+        <div class="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            <!-- Engagemang 1 -->
+            <div class="bg-white text-gray-900 shadow-md rounded-lg p-6">
+                <h3 class="text-xl font-semibold">Bli medlem</h3>
+                <p class="mt-4 text-gray-600">Genom att bli medlem stöttar du vårt arbete och får nyheter om vårt miljöarbete.</p>
+                <a href="#" class="mt-6 text-green-600 hover:text-green-800">Bli medlem</a>
+            </div>
+            <!-- Engagemang 2 -->
+            <div class="bg-white text-gray-900 shadow-md rounded-lg p-6">
+                <h3 class="text-xl font-semibold">Stöd via donation</h3>
+                <p class="mt-4 text-gray-600">Din donation gör skillnad och hjälper oss att skydda naturen.</p>
+                <a href="#" class="mt-6 text-green-600 hover:text-green-800">Ge en donation</a>
+            </div>
+            <!-- Engagemang 3 -->
+            <div class="bg-white text-gray-900 shadow-md rounded-lg p-6">
+                <h3 class="text-xl font-semibold">Volontärarbete</h3>
+                <p class="mt-4 text-gray-600">Som volontär kan du hjälpa till att skydda naturen genom att delta i projekt och aktiviteter.</p>
+                <a href="#" class="mt-6 text-green-600 hover:text-green-800">Bli volontär</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- New Section: Naturskyddsföreningens Historia (Visible only on desktop) -->
+    <section class="hidden lg:block bg-white py-16">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2">
+                    <img src="images/tree.jpeg" alt="Naturskyddsföreningens Historia" class="w-full h-auto rounded-lg shadow-md">
+                </div>
+                <div class="lg:w-1/2 mt-8 lg:mt-0 lg:ml-16">
+                    <h2 class="text-3xl font-semibold text-gray-900 mb-4">Detta syns endast på större skärmar</h2>
+                    <p class="text-lg text-gray-600">
+                        Naturskyddsföreningen har länge arbetat för att bevara och skydda Sveriges natur och miljö. Vi strävar efter att skapa medvetenhet och driva på förändringar för att skapa en hållbar framtid.
+                        Gå in och läs via datorn för att få full upplevelse.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Julbutik Section -->
+    <section id="shop" class="bg-cover bg-center h-96" style="background-image: url('images/bjorn-m-ungar-istock.jpg');">
+        <div class="flex flex-col justify-center items-center h-full text-center text-white bg-black bg-opacity-50">
+            <h2 class="text-4xl font-bold mb-4">Satsa på en julklapp för naturen</h2>
+            <p class="text-lg mb-8">Sprid julens glädje och värme med en julklapp som gör skillnad. I vår julbutik hittar du julgåvobevis, presentmedlemskap och böcker – presenter som stödjer vårt arbete för att skydda miljön.</p>
+            <a href="#shop" class="bg-green-600 hover:bg-green-700 text-white py-2 px-6 rounded-full">Till julbutiken</a>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="bg-white py-16">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-4xl font-semibold text-gray-900">Från bloggen</h2>
+            <p class="mt-2 text-lg text-gray-600">Läs våra tips om hur vi tillsammans kan rädda vår planet.</p>
+            <div class="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                <!-- Blog Post 1 -->
+                <div class="bg-white shadow-md rounded-lg p-6">
+                    <h3 class="text-xl font-semibold text-gray-900">Så här räddar vi våra hav</h3>
+                    <p class="mt-4 text-gray-600">För att bevara våra hav för kommande generationer måste vi vidta åtgärder nu. Minska plastföroreningar och skydda marina ekosystem.</p>
+                    <a href="#" class="mt-6 text-green-600 hover:text-green-800">Läs mer</a>
+                </div>
+                <!-- Blog Post 2 -->
+                <div class="bg-white shadow-md rounded-lg p-6">
+                    <h3 class="text-xl font-semibold text-gray-900">Så kan vi stoppa skogsskövling</h3>
+                    <p class="mt-4 text-gray-600">Genom att skydda våra skogar och öka medvetenheten kan vi stoppa skogsskövlingen och bevara naturens mångfald.</p>
+                    <a href="#" class="mt-6 text-green-600 hover:text-green-800">Läs mer</a>
+                </div>
+                <!-- Blog Post 3 -->
+                <div class="bg-white shadow-md rounded-lg p-6">
+                    <h3 class="text-xl font-semibold text-gray-900">Fossilfri framtid – så gör vi</h3>
+                    <p class="mt-4 text-gray-600">För att säkra en hållbar framtid måste vi minska vårt beroende av fossila bränslen och satsa på förnybar energi.</p>
+                    <a href="#" class="mt-6 text-green-600 hover:text-green-800">Läs mer</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Section: Naturskyddsföreningens Historia (Visible only on desktop) -->
+    <section class="hidden lg:block bg-white py-16">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2">
+                    <img src="images/pfas.jpg" alt="Naturskyddsföreningens Historia" class="w-full h-auto rounded-lg shadow-md">
+                </div>
+                <div class="lg:w-1/2 mt-8 lg:mt-0 lg:ml-16">
+                    <h2 class="text-3xl font-semibold text-gray-900 mb-4">Naturskyddsföreningens Historia</h2>
+                    <p class="text-lg text-gray-600">
+                        Naturskyddsföreningen har länge arbetat för att bevara och skydda Sveriges natur och miljö. Vi strävar efter att skapa medvetenhet och driva på förändringar för att skapa en hållbar framtid.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#7C8A4D] text-white py-8">
+        <div class="text-center">
+            &copy; 2024 Naturskyddsföreningen. Alla rättigheter reserverade.
+        </div>
+    </footer>
+
+    <!-- Script -->
+    <script>
+        const hamburger = document.getElementById("hamburger");
+        const menu = document.getElementById("menu");
+        const mobileMenu = document.getElementById("mobile-menu");
+
+        hamburger.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
+            mobileMenu.classList.toggle("hidden");
+        });
+    </script>
+
+</body>
+
+</html>
